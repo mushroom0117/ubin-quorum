@@ -3,74 +3,92 @@ module.exports = {
     development: {
       host: "localhost",
       port: 8545,
-      network_id: "*" // Match any network id
+      network_id: "*"
     },
     mas: {
-      host: "quorumnx01.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.3",
       port: 20010,
-      network_id: "*", // Match any network id
-      gas: 200000000
+      network_id: "*",
+      gas: 200000000,
+      type: "quorum"
     },
     cb: {
-      host: "quorumnx02.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.4",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     a: {
-      host: "quorumnx03.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.5",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     b: {
-      host: "quorumnx04.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.6",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     c: {
-      host: "quorumnx05.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.7",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     d: {
-      host: "quorumnx06.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.8",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     e: {
-      host: "quorumnx07.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.9",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     f: {
-      host: "quorumnx08.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.10",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     g: {
-      host: "quorumnx09.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.11",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     h: {
-      host: "quorumnx10.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.12",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     i: {
-      host: "quorumnx12.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.13",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     j: {
-      host: "quorumnx14.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.14",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     },
     k: {
-      host: "quorumnx15.southeastasia.cloudapp.azure.com",
+      host: "192.168.56.15",
       port: 20010,
-      network_id: "*" // Match any network id
+      network_id: "*",
+      type: "quorum"
     }
-  }
-};
+  },
+  compilers: {
+    solc: {
+      version: "0.4.11",
+    },
+  },
 
+};
