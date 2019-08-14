@@ -32,7 +32,7 @@ Object.keys(config).forEach( enode => {
   if (stashName === "MASREGULATOR") regulator = true;
   let nodeConfig = {
     "nodeId" : parseInt(nodeId),
-    "host" : "quorumnx"+nodeId+".southeastasia.cloudapp.azure.com",
+    "host" : config[enode].ipAddress,
     "port": "20010",
     "accountNumber" : 0,
     "ethKey" : config[enode].address,
