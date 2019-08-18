@@ -1,4 +1,4 @@
-/* pragma solidity ^0.4.11; */
+pragma solidity ^0.4.11;
 
 // Copyright 2017 Zerocoin Electric Coin Company LLC
 //
@@ -55,11 +55,11 @@ contract ZSLPrecompile {
 
     // @dev Address of precompiles must match those in the Geth/Quorum client
     function ZSLPrecompile() {
-        compressContract = ZSLPrecompileSHA256Compress(0x000000000000000000000000000000005a534c01);
-        verifyShieldedTransferContract = ZSLPrecompileVerifyTransfer(0x000000000000000000000000000000005a534c02);
-        verifyShieldingContract = ZSLPrecompileVerify(0x000000000000000000000000000000005a534c03);
+        compressContract = ZSLPrecompileSHA256Compress(0x000000000000000000000000000000005A534c01);
+        verifyShieldedTransferContract = ZSLPrecompileVerifyTransfer(0x000000000000000000000000000000005A534c02);
+        verifyShieldingContract = ZSLPrecompileVerify(0x000000000000000000000000000000005a534C03);
         verifyUnshieldingContract = ZSLPrecompileVerify(0x000000000000000000000000000000005a534c04);
-        verifyABCContract = ZSLPrecompileVerifyABC(0x000000000000000000000000000000005a534c05);
+        verifyABCContract = ZSLPrecompileVerifyABC(0x000000000000000000000000000000005A534C05);
     }
 
     // @param input Input data block must be 64 bytes (512 bits) in length

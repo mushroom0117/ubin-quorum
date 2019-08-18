@@ -1075,7 +1075,7 @@ contract PaymentAgent is Owned { // Regulator node (MAS) should be the owner
   // Implementation of UBIN-60 - Laks
   // ------------------------------
   function updatePriority(bytes32 _txRef, int _express) {
-    var (i,found) = ArrayIndexOf(pmtIdx,_txRef);
+    var found = ArrayIndexOf(pmtIdx,_txRef);
     if (!found) {
       statusCode(300);
       return;
@@ -1123,7 +1123,7 @@ contract PaymentAgent is Owned { // Regulator node (MAS) should be the owner
     bytes32 curTxRef;
     uint curTstamp;
     int curExpress;
-    var (index, found) = ArrayIndexOf(gridlockQueue, _txRef);
+    var index = ArrayIndexOf(gridlockQueue, _txRef);
     uint j = index;
     if (payments[_txRef].express == 1){
       // shift the txn to the left
