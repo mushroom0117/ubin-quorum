@@ -301,7 +301,27 @@ $ cd ~/ubin-quorum/
 $ node convertConfig.js
 ```
 
-3\.	Deploy contracts to the network.
+3\. Set up Web3 RPC proxy for Quorum
+
+```sh
+$ git clone https://github.com/edgraaff/quorum-rpc-proxy
+```
+
+Editing the config.js file to: 
+```
+module.exports = [{
+  rpcUrl: 'http://192.168.56.3:20010',
+  port: 7545
+}];
+```
+
+Start server
+```sh
+$ screen
+$ npm run start
+```
+
+4\.	Deploy contracts to the network.
 
 ```sh
 $ cd ~/ubin-quorum/
