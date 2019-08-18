@@ -10,9 +10,10 @@ module.exports = {
     mas: {
       host: "192.168.56.3",
       port: 20010,
-      network_id: "*",
-      gas: 2000,
-      type: "quorum"
+      network_id: "*", // Match any network id
+      gasPrice: 0,
+      gas: 2000000000,
+      type: "quorum" // needed for Truffle to support Quorum
     },
     cb: {
       host: "192.168.56.4",
