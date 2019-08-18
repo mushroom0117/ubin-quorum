@@ -1,5 +1,5 @@
 rm -rf build
-truffle deploy
+truffle deploy --network mas
 cd solc-local
 
 echo "[*] deploying SGDz to node 01..."
