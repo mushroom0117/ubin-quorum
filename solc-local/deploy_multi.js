@@ -21,8 +21,8 @@ var sgdz = sgdzContract.new({
         console.log("err creating contract", e);
     } else {
         if (!contract.address) {
-            console.log("Contract transaction send: TransactionHash: " + contract.transactionHash
-                + " waiting to be mined...");
+            console.log("Contract transaction send: TransactionHash: " + contract.transactionHash);
+            console.log("Waiting to be mined...");
         } else {
             console.log("Contract mined! Address: " + contract.address);
 

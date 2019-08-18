@@ -5,8 +5,8 @@ var PaymentAgent = artifacts.require("PaymentAgent")
 var SGDz = artifacts.require("SGDz")
 // var ZSLPrecompile = artifacts.require("./ZSLPrecompile.sol")
 
-module.exports = function(deployer) {
+module.exports = async function(deployer) {
   // deployer.deploy(ZSLPrecompile);  
-  deployer.deploy(SGDz);
-  deployer.deploy(PaymentAgent, {privateFor: nodes.slice(1)});
+  await deployer.deploy(SGDz);
+  await deployer.deploy(PaymentAgent, {privateFor: nodes.slice(1)});
 };
